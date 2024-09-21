@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
         <div className="container">
-            <p>&copy; 2024 AI Concept Website. All rights reserved.</p>
+            <p>Shawon &copy; 2024 AI Concept Website. All rights reserved.</p>
         </div>
     </footer>
   )
