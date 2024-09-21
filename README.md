@@ -1,6 +1,8 @@
 # AI_Concept_React_App
 **AI Concept** is a simple React website that demonstrates static routing, dynamic routing, error handling (404 page), and a contact form that sends messages via EmailJS. This project was built to explore basic React and routing functionalities.
 
+### Live: https://ai-concept-react-app.netlify.app/
+
 ## Features
 - Static and Dynamic Routing using `react-router-dom`
 - 7 Pages (Home, About AI, Applications, Future of AI, Blogs AI, Blog Details, Contact)
