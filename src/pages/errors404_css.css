@@ -1,0 +1,57 @@
+/* Main container for the 404 page */
+.error-container {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Large 404 title */
+  .error-title {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+  }
+  
+  /* Error message */
+  .error-message {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Description of the error */
+  .error-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for the return button */
+  .error-button {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .error-button:hover {
+    background-color: #ff4757;
+  }
+  
+  /* Container for the error image */
+  .error-image-container {
+    margin-top: 40px;
+  }
+  
+  /* Styling for the image */
+  .error-image {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }

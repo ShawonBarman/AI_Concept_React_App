@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section#about h2, section#applications h2,  section#future h2, section#contact h2{
+    font-size: 1.8rem;
+}
+
+section#about p, section#applications p,  section#future p, section#contact p{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: linear-gradient(to bottom right, rgba(76, 175, 80, 0.8), rgba(255, 87, 34, 0.8));
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+.hero .btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.hero .btn a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background-color: #388E3C;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+.ai-applications-section {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.section-title{
+    font-size: 32px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.section-title2{
+    margin-top: 50px;
+}
+
+.applications-list, .technologies-list, .research-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.applications-list li, .technologies-list li{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    flex-basis: calc(33.333% - 20px);
+    max-width: 300px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.applications-list li strong, .technologies-list li strong, .research-list li strong {
+    color: #ff5722;
+}
+
+.applications-list li:hover, .technologies-list li:hover, .research-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .applications-list li, .technologies-list li, .research-list li {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .applications-list li, .technologies-list li, .research-list li {
+        flex-basis: 100%;
+    }
+}
+
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+  
+.contact-section .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-section .form-group {
+    display: flex;
+    flex-direction: column;
+}
+  
+.contact-section label {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+  
+.contact-section input, .contact-section textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+  
+.contact-section input:focus, .contact-section textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+.contact-section button[type="submit"] {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact-section button:hover {
+    background-color: #388E3C;
+    transform: translateY(-3px);
+}
+  
+/* Adding spacing and responsiveness */
+@media screen and (max-width: 768px) {
+    .contact-section .container {
+      padding: 30px;
+    }
+  
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+  
+    .contact-section input,
+    .contact-section textarea {
+      font-size: 0.9rem;
+    }
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
